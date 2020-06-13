@@ -1,0 +1,175 @@
+<!DOCTYPE html>.
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        This is the survey form for favorite programming languages
+      </p>
+      <form id="survey-form" class="form">
+        <div class="form-control">
+          <label for="name" id="name-label">Name</label>
+
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="age" id="number-label">Age(optional)</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="90"
+            placeholder="Enter your age"
+            required
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="roles"
+            >What is your current role in programming world?</label
+          >
+          <select id="dropdown">
+            <option value="" name="" id="" selected>Select current role</option>
+            <option value="" name="" id="">Full time developer</option>
+            <option value="" name="" id="">Full time tuitor</option>
+            <option value="intern">Intern</option>
+            <option value="" name="" id="">Full time learner</option>
+            <option value="">Prefer not to say</option>
+          </select>
+        </div>
+
+        <div id="radio">
+          <div class="radio">
+            <label for="radio"
+              >Would you recommend a friend to learn one of them?</label
+            >
+          </div>
+
+          <div class="radio">
+            <input type="radio" name="radio" id="yes" value="yes" checked />
+            <label for="yes">Yes</label>
+          </div>
+
+          <div class="radio">
+            <input type="radio" name="radio" id="no" value="no" />
+            <label for="no">No</label>
+          </div>
+
+          <div class="radio">
+            <input type="radio" name="radio" id="may-be" value="may-be" />
+            <label for="may-be">May be</label>
+          </div>
+        </div>
+
+        <div class="form-control">
+          <label for="select">
+            Which option best suggest your favorite language?
+          </label>
+          <select name="" id="">
+            <option value="select" selected>Select favorite language</option>
+            <option value="javascript">Javascript</option>
+            <option value="python">Python</option>
+            <option value="php">PHP</option>
+            <option value="go-lang">Go Lang</option>
+            <option value="java">Java</option>
+            <option value="C++">C++</option>
+            <option value="visual-base">Visual Base</option>
+            <option value="perl">Perl</option>
+          </select>
+        </div>
+
+        <div id="check">
+          <div class="checkmark">
+            <label for="improvements">
+              What would you like to see improved in the programming
+              industry?(check all that apply)
+            </label>
+          </div>
+
+          <div class="checkmark">
+            <input type="checkbox" name="projects" value="projects" />
+            <label for="projects">Back-end projects </label>
+          </div>
+
+          <div class="checkmark">
+            <input type="checkbox" name="data" value="data" />
+            <label for="data">Data Visualization Conceipts</label>
+          </div>
+
+          <div class="checkmark">
+            <input type="checkbox" name="challenges" value="challenges" />
+            <label for="challenges">Quick to solve Challenges</label>
+          </div>
+
+          <div class="checkmark">
+            <input type="checkbox" name="open-source" value="open-source" />
+            <label for="open-source">Open Source Community</label>
+          </div>
+
+          <div class="checkmark">
+            <input type="checkbox" name="gitter" value="gitter" />
+            <label for="gitter">Gitter help rooms</label>
+          </div>
+
+          <div class="checkmark">
+            <input type="checkbox" name="videos" value="videos" />
+            <label for="videos">Quality videos</label>
+          </div>
+
+          <div class="checkmark">
+            <input type="checkbox" name="wiki" value="wiki" />
+            <label for="wiki">Wiki</label>
+          </div>
+
+          <div class="checkmark">
+            <input type="checkbox" name="forum" value="forum" />
+            <label for="forum">A Welcoming Programming Forum</label>
+          </div>
+
+          <div class="checkmark">
+            <input type="checkbox" name="" value="course" />
+            <label for="courses">Additional Courses</label>
+          </div>
+        </div>
+
+        <div class="form-control">
+          <label for="text-area">Any comments or suggestions?</label>
+          <textarea
+            name="texarea"
+            id="text-area"
+            cols="30"
+            rows="10"
+            placeholder="Enter your comment here"
+          ></textarea>
+        </div>
+
+        <button id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
